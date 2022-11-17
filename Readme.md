@@ -23,6 +23,7 @@
 [4.5 A program that brute-force calculates the number of lucky tickets lucky tickets](#45)
 
 <a name="1"/>
+
 ## 1. T1 computer architecture
 T1 - machine with Von Neumann architecture with address space in 2^20 words, each of which takes 32 bits. 
 Each command takes exactly one word, the 8 high bits of which are the operation code, and the use of the remaining 24 bits depends on the operation. The computer has sixteen single word (32 bits each) registers r0-r15, their values are given in Table 1.
@@ -206,7 +207,7 @@ enum code {
 All programs for the T1 processor run under the T1OS operating system. To run a program, an executable file must be generated which contains meta-information (section descriptions) and the sections themselves. The program is stored in external memory (say, on a hard disk or SDD) as a set of bytes. The word consists of 4 bytes in the following order: 3210, that is, in LSB format. The header of an executable file contains exactly 512 bytes, the contents of which are described below. Starting from the 512 bytes, sections of code, constants and data are placed in sequence and are loaded into the virtual memory starting from address 0. Program execution starts from the address written in the header of the executable file, and the initial value of the stack is determined by the corresponding field in the header. The format of the executable file is given in Table 4.
 #### Table 4: T1OS executable file format 
 |Code   | Content     |
-|-------|--------------|-------------|
+|-------|-------------|
 |0..15      |The ASCII string "ThisT12Exec"    |
 |16..19      |Program code size    |
 |20..23      |The size of the program constants    |
