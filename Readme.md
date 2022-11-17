@@ -1,4 +1,5 @@
 `T1-compile-and-run.cpp` - Reads program code written in T1-Assmbler from  `input.fasm` and compiles it to a executable file on the T1 machine emulator. Then runs the emulator program.
+
 `T1-load-and-run.cpp` - Reads the executable file `input.bin` and executes the T1 processor machine instructions contained in that file.
 
 ### Table of Contents
